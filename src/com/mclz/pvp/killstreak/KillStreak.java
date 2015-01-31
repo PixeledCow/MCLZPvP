@@ -1,8 +1,4 @@
-package com.mclz.pvp;
-
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
+package com.mclz.pvp.killstreak;
 
 /**
  * ***********************************************************************
@@ -15,21 +11,8 @@ import org.bukkit.plugin.java.JavaPlugin;
  * ************************************************************************
  */
 
-public class Core extends JavaPlugin  {
+public class KillStreak {
 
-    public static String TAG = "§4§l[§cPvP§4§l] §6";
+    public static int kills;
 
-    @Override
-    public void onEnable() {
-
-    }
-
-    @Override
-    public void onDisable() {
-
-    }
-
-    public static Plugin getPlugin() {
-        return Bukkit.getPluginManager().getPlugin("MCLZPvP");
-    }
 }

@@ -1,8 +1,8 @@
-package com.mclz.pvp;
+package com.mclz.pvp.util;
 
-import org.bukkit.Bukkit;
-import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.entity.Player;
+
+import java.util.Random;
 
 /**
  * ***********************************************************************
@@ -15,21 +15,18 @@ import org.bukkit.plugin.java.JavaPlugin;
  * ************************************************************************
  */
 
-public class Core extends JavaPlugin  {
+public class ProbabilityManager {
 
-    public static String TAG = "§4§l[§cPvP§4§l] §6";
-
-    @Override
-    public void onEnable() {
-
+    private static float generateRandomChance() {
+        Random r = new Random();
+        return r.nextFloat();
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
-    public static Plugin getPlugin() {
-        return Bukkit.getPluginManager().getPlugin("MCLZPvP");
+    public static boolean calculateChance(Player player) {
+        if (generateRandomChance() <= 0.3F) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

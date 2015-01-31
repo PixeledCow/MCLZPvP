@@ -1,0 +1,9 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="/**&#10; * ***********************************************************************&#10; * Copyright PixeledCow (C) 2015. All Rights Reserved.&#10; * Any code contained within this document, and any associated APIs with similar branding&#10; * are the sole property of PixeledCow. Distribution, reproduction, taking snippets, or&#10; * claiming any contents as your own will break the terms of the liscense, and void any&#10; * agreements with you, the third party.&#10; * Thanks.&#10; * ************************************************************************&#10; */" />
+    <option name="keyword" value="Copyright" />
+    <option name="allowReplaceKeyword" value="" />
+    <option name="myName" value="PixeledCow" />
+    <option name="myLocal" value="true" />
+  </copyright>
+</component>
