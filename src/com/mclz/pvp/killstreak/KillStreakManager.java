@@ -2,6 +2,8 @@ package com.mclz.pvp.killstreak;
 
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
+
 /**
  * ***********************************************************************
  * Copyright PixeledCow (C) 2015. All Rights Reserved.
@@ -12,28 +14,17 @@ import org.bukkit.entity.Player;
  * Thanks.
  * ************************************************************************
  */
+public class KillStreakManager {
 
-public class KillStreak {
+    public static ArrayList<KillStreak> killstreaks = new ArrayList<KillStreak>();
 
-    private Player p;
-    private int kills;
-
-    public KillStreak(Player p){
-        this.p = p;
-        this.kills = 0;
-        KillStreakManager.killstreaks.add(this);
-    }
-
-    public Player getPlayer(){
-        return p;
-    }
-
-    public int getKills(){
-        return kills;
-    }
-
-    public void setKills(int kills){
-        this.kills = kills;
+    public static KillStreak getKillStreak(Player p){
+        for(KillStreak ks : killstreaks){
+            if(ks.getPlayer().equals(p)){
+                return ks;
+            }
+        }
+        return null;
     }
 
 }
