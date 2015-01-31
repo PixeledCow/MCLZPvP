@@ -1,0 +1,5 @@
+name: MCLZPvP
+version: 1.0
+main: com.mclz.pvp.Core
+description: Stuff
+commands:
